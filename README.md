@@ -143,7 +143,7 @@ This story illustrates how users interact with the application through various A
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Rakshath66/TaskFlow/
+git clone https://github.com/Rakshath66/Task-Management-System/
 ```
 
 2. Install dependencies:
