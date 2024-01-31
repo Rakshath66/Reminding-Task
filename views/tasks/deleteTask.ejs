@@ -1,0 +1,28 @@
+<!-- tasks folder is unused, as the problem statement is concerned only on backend -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Sign Up</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    
+    <div class="container mt-4">
+
+      <form action="/tasks/<%= taskid %>" method="POST">
+        
+        <div class="mb-3">
+          <label for="taskid" class="form-label">Task ID</label>
+          <input type="text" name="taskid" class="form-control" id="status" placeholder="TODO or IN_PROGRESS or DONE">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+
+    <%- include('./partials/scripts') %>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Sign In</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    
+    <div class="container mt-4">
+
+        <form action="/user/login" method="POST">
+
+            <div class="mb-3">
+              <label for="phone_number" class="form-label">Phone Number</label>
+              <input type="tel" name="phone_number" class="form-control" id="fullName" pattern="/^[+]?(\d{1,2})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/" required>
+              <div id="emailHelp" class="form-text">We'll never share your Phone Number with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+    <%- include('./partials/scripts') %>
+</body>
+</html>

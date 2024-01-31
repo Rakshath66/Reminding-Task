@@ -1,0 +1,38 @@
+<!-- tasks folder is unused, as the problem statement is concerned only on backend -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <title>Sign Up</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    
+    <div class="container mt-4">
+
+      <form action="/tasks/" method="POST">
+
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="title" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="description">Body</label>
+            <textarea class="form-control" name="description" id="description"></textarea>
+        </div>
+        
+        <div class="mb-3">
+          <label for="due_date" class="form-label">Due Date:</label>
+          <input type="date" id="due_date" name="due_date" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+
+    <%- include('./partials/scripts') %>
+</body>
+</html>
